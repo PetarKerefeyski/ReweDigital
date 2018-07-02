@@ -16,8 +16,6 @@ export class AboutComponent implements OnInit {
     if(!this.Auth.isLoggedIn){
       sessionStorage.setItem('loggedIn', 'false');    
     }
-    
-
   }
 
 }

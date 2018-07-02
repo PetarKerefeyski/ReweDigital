@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { TableComponent } from '../table/table.component';
-import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-products',
@@ -11,16 +9,12 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
   
-  constructor(public Auth: AuthService, private router: Router) { }
+  constructor(public Auth: AuthService) { }
 
   ngOnInit() {
     if(!this.Auth.isLoggedIn){
       sessionStorage.setItem('loggedIn', 'false');    
     }
-  }
-  
-  changeRoute(newRoute: string) {
-    this.router.navigate([newRoute]);
-  }
+  }  
 }
 

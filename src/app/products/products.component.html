@@ -1,32 +1,13 @@
 <div class="container-fluid">
   <div class="page-header">
-      <img src="http://www.amorequietplace.com/wp-content/uploads/2013/08/Logo-REWE_positiv.jpg" style="height: auto; width: 20%;" alt="Responsive image">
+    <img src="http://www.amorequietplace.com/wp-content/uploads/2013/08/Logo-REWE_positiv.jpg" style="height: auto; width: 20%;" alt="Responsive image">
+  </div>
+  <div class="row">
+    <app-sidenav></app-sidenav>
+    <div class="col-sm-9 col-md-9">
+      <div class="well">
+        <app-table></app-table>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" (click) = "changeRoute('about')" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-                            </span>About</a>
-                        </h4>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" (click) = "changeRoute('products')" href="#collapseTwo"><span class="glyphicon glyphicon-th">
-                            </span>Products</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-9 col-md-9">
-            <div class="well">
-              <app-table></app-table>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
