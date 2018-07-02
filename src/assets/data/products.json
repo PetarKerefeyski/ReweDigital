@@ -1,0 +1,59 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "name": "Bread",
+            "price": 0.75,
+            "rating": 3.7
+        },
+        {
+            "id": 2,
+            "name": "Water",
+            "price": 1,
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "name": "Banana",
+            "price": 3,
+            "rating": 3
+        },
+        {
+            "id": 4,
+            "name": "Yoghurt",
+            "price": 1,
+            "rating": 5
+        },
+        {
+            "id": 5,
+            "name": "Bacon",
+            "price": 10,
+            "rating": 3.5
+        }
+    ],
+    "settings" : {
+        "columns": {
+        "id": {
+            "title": "ID",
+            "editable": false
+        },
+        "name": {
+            "title": "Name",
+            "editable": false
+        },
+        "price": {
+            "title": "Price",
+            "editable": false
+        },
+        "rating": {
+            "title": "Rating",
+            "editable": false
+        }
+        },
+        "actions": {
+        "add": false,
+        "edit": false,
+        "delete": false
+        }
+    }
+}

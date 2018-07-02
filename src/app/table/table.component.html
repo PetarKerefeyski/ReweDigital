@@ -1,0 +1,6 @@
+<input #search class="search" type="text" placeholder="Search..." (keydown.enter)="onSearch(search.value)">
+<ng2-smart-table 
+    style="font-size: 2rem"
+    [settings]="settings" 
+    [source]="data">
+</ng2-smart-table>

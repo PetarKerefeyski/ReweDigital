@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
