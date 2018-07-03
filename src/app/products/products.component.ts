@@ -13,8 +13,11 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     if(!this.Auth.isLoggedIn){
-      sessionStorage.setItem('loggedIn', 'false');    
+      this.logout();      
     }
   }  
+  logout() {
+    this.Auth.logout();
+  }
 }
 

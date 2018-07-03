@@ -1,16 +1,27 @@
+<app-header></app-header> 
 <div class="container-fluid">
-    <div class="page-header">
-        <img src="http://www.amorequietplace.com/wp-content/uploads/2013/08/Logo-REWE_positiv.jpg" style="height: auto; width: 20%;" alt="Responsive image">
-      </div>
-      <div class="row">          
-          <app-sidenav></app-sidenav>
-          <div class="col-sm-9 col-md-9">
-              <div class="well">
-                  Aktuelle Projekte
-                  Klick für klick – Fortschritt.
-                  Jeden Tag arbeiten wir an neuen Ideen, die deine Welt noch komfortabler, schneller und unkomplizierter machen. Zum Beispiel kannst du deine Einkäufe ab jetzt ganz bequem über unsere neuen REWE-APP erledigen. Und auch im Netz haben wir interessante Neuigkeiten für dich – ein neues Weinportal, eine große Auswahl an erstklassigem Fleisch und vieles mehr.
-              </div>
+  <div class="row">          
+    <app-sidenav></app-sidenav>
+    <div class="col-sm-9 col-md-9">
+      <div class="well" *ngIf="isAdmin">
+          <div>
+            A bounty of opportunities and prospects, options and growth potential, careers and distribution chains are waiting for you. 
+            We want to play a significant role in the development of trade and tourism. To do so, we need people who want help us make a difference. 
+            We are looking for outside-the-box mavericks, inquisitive minds, seasoned professionals, go-getters, knowledge seekers and matrix thinkers. 
+            Take a decisive step for your career and use your potential to take REWE Group team to the next level.
           </div>
+          <div>
+            The newly established and rapidly growing unit REWE digital in Cologne pools all of the strategic and some of the operational online activities of REWE Group. REWE digital aims to become the leading provider of online solutions in all of the markets relevant to REWE Group.
+
+              One of the most important tasks of REWE digital is the digitalisation of the food retail sector in Germany. In this approach, customers are given the opportunity to order food online which is then delivered, fresh and cooled, to their doorstep in their desired timeframe.
+              
+              Together with other business units, REWE digital also develops omni-channel solutions and controls investments in and the management of participations of REWE Group in digital ventures. The team is currently involved in the active development of one of the most exciting digital projects of the trade and tourism segment. 
+          </div>
+        </div>
+        <div class="well" *ngIf="!isAdmin">
+            You do not have access to this content!
+        </div>
       </div>
+    </div>
   </div>
   

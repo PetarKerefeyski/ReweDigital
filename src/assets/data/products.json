@@ -33,27 +33,27 @@
     ],
     "settings" : {
         "columns": {
-        "id": {
-            "title": "ID",
-            "editable": false
-        },
-        "name": {
-            "title": "Name",
-            "editable": false
-        },
-        "price": {
-            "title": "Price",
-            "editable": false
-        },
-        "rating": {
-            "title": "Rating",
-            "editable": false
-        }
+            "id": {
+                "title": "ID",
+                "filter": false
+            },
+            "name": {
+                "title": "Name",
+                "filter": false
+            },
+            "price": {
+                "title": "Price",
+                "filter": false
+            },
+            "rating": {
+                "title": "Rating",
+                "filter": false
+            }
         },
         "actions": {
-        "add": false,
-        "edit": false,
-        "delete": false
+            "add": false,
+            "edit": false,
+            "delete": false
         }
     }
 }

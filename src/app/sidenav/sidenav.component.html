@@ -1,10 +1,9 @@
-
 <div class="col-sm-3 col-md-3">
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" (click) = "changeRoute('about')" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                    <a data-toggle="collapse" (click) = "changeRoute('about')"><span class="glyphicon glyphicon glyphicon-info-sign">
                     </span>About</a>
                 </h4>
             </div>
@@ -12,8 +11,16 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" (click) = "changeRoute('products')" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                    <a data-toggle="collapse" (click) = "changeRoute('products')"><span class="glyphicon glyphicon-shopping-cart">
                     </span>Products</a>
+                </h4>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" (click) = "logout()"><span class="glyphicon glyphicon-log-out">
+                    </span>Log out</a>
                 </h4>
             </div>
         </div>

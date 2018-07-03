@@ -10,12 +10,15 @@ import { Subject } from 'rxjs';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(public Auth: AuthService) { }
+  constructor(private Auth: AuthService) { }
 
+  isAdmin: boolean;
+  
   ngOnInit() {
+    // let isAdmin = this.Auth.isAdmin;
+    this.isAdmin = this.Auth.isAdmin;
     if(!this.Auth.isLoggedIn){
       sessionStorage.setItem('loggedIn', 'false');    
     }
   }
-
 }

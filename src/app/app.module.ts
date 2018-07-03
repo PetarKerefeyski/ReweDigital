@@ -13,6 +13,7 @@ import { AuthGuard } from './auth.guard'
 import { AuthService } from './auth.service';
 import { TableComponent } from './table/table.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     ProductsComponent,
     AboutComponent,
     TableComponent,
-    SidenavComponent
+    SidenavComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

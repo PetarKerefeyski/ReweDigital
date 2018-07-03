@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
           if(data[i].password == password){
             this.router.navigate(['products']);
             this.Auth.setLoggedIn(true);
+            this.Auth.setAdminStatus(data[i].isAdmin);
             return;
           } else {
             return;                       

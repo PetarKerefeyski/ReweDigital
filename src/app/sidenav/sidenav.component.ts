@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 
 @Component({
@@ -9,12 +10,17 @@ import { Router } from '@angular/router';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+              private Auth: AuthService) { }
 
   ngOnInit() {
   }
 
   changeRoute(newRoute: string) {
     this.router.navigate([newRoute]);
+  }
+      
+  logout() {
+    this.Auth.logout();
   }
 }

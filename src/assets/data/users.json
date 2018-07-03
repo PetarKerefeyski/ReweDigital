@@ -2,11 +2,11 @@
     {
         "username": "petark",
         "password": "petark",
-        "usertype": "B"
+        "isAdmin": false
     },
     {
         "username": "admin",
         "password": "admin",
-        "usertype": "A"
+        "isAdmin": true
     }
 ]
