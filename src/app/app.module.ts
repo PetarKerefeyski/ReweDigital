@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { Ng2SmartTableModule, LocalDataSource } from 'ng2-smart-table';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';

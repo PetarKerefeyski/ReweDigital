@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
 
   constructor(private Auth: AuthService) { }
 
-  isAdmin: boolean;
+  private isAdmin: boolean;
   
   ngOnInit() {
     // let isAdmin = this.Auth.isAdmin;

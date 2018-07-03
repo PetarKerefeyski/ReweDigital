@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth.service';
 import { TableComponent } from '../table/table.component';
 
 @Component({
@@ -9,15 +8,9 @@ import { TableComponent } from '../table/table.component';
 })
 export class ProductsComponent implements OnInit {
   
-  constructor(public Auth: AuthService) { }
+  constructor() { }
 
   ngOnInit() {
-    if(!this.Auth.isLoggedIn){
-      this.logout();      
-    }
-  }  
-  logout() {
-    this.Auth.logout();
   }
 }
 
