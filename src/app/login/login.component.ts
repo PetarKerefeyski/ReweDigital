@@ -12,8 +12,10 @@ export class LoginComponent implements OnInit {
 
   constructor(public Auth: AuthService, private router: Router) { }
   
+  userHasCorrectCredentials: boolean;
 
   ngOnInit() {
+    this.userHasCorrectCredentials = true;
   }
 
   loginUser(event) {
@@ -31,10 +33,12 @@ export class LoginComponent implements OnInit {
             this.Auth.setAdminStatus(data[i].isAdmin);
             return;
           } else {
+            this.userHasCorrectCredentials = false;
             return;                       
           }
         }
       }
+      this.userHasCorrectCredentials = false;
       return;   
     });
   }
