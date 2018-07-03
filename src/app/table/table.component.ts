@@ -15,10 +15,10 @@ interface productsResponse {
 })
 export class TableComponent implements OnInit {
 
-  private source: LocalDataSource;
-  private data: any;
-  private settings: any;
-  private isAdmin: boolean;
+  public source: LocalDataSource;
+  public data: any;
+  public settings: any;
+  public isAdmin: boolean;
 
   constructor(private http: HttpClient, private Auth: AuthService) {
   }
